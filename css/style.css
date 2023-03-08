@@ -1,1 +1,4 @@
-body{background-color: black;}
+body{background-color: antiquewhite;}
+img{width: 200px; /* ancho de la imagen */
+height: 200px; /* largo de la imagen */}
+tr:hover{background-color: brown;}
