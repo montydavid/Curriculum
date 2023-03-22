@@ -2,3 +2,15 @@ body{background-color: antiquewhite;}
 img{width: 200px; /* ancho de la imagen */
 height: 200px; /* largo de la imagen */}
 tr:hover{background-color: brown;}
+input{
+    border-radius: 3px;
+    border: 3px solid green;
+    background-color: blanchedalmond;
+}
+.inputcolor{
+    background-color: aquamarine;
+}
+#contraseña{
+    background-color: blue;/*color del fondo de la cascada*/
+    color: brown;/*color de la letra*/
+}
