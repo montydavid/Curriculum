@@ -14,3 +14,12 @@ input{
     background-color: blue;/*color del fondo de la cascada*/
     color: brown;/*color de la letra*/
 }
+input:valid,
+textarea:valid {
+    background: green;
+}
+
+input:invalid,
+textarea:invalid {
+    background: red;
+}

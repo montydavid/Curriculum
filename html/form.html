@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docum</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formularios</title>
 </head>
 <body>
-    <h1>formularios</h1>
+    <h1>formulario para el hospital</h1>
+    <br>
+    <img src="../img/hospital.jfif" alt="una imagen de el hospital de ocaña">
     <form action="">
         <fieldset>
-            <label for="nombre completo">nombre completo</label>
-            <input type="text">
-            <label for="direccion">direccion</label>
-            <input type="text">
-            <label for="observacion">observacion</label>
-            <input type="text">
+            <label for="nombre completo">Nombre completo</label>
+            <input type="text" maxlength="100" minlength="4" required>
+            <label for="direccion">Direccion</label>
+            <input type="text" required>
+            <label for="edad">Edad</label>
+            <input type="number" min="0" required>
+            <label for="peso">Peso en kg</label>
+            <input type="number" min="0" required>
+            <label for="eps">Eps</label>
+            <input type="text" minlength="3">
+            <label for="documento">Documento de identidad</label>
+            <input type="number" min="0">
+            <label for="sexo">Sexo</label>
+            <input type="text" required>
             <button>enviar</button>
         </fieldset>
     </form>
