@@ -112,3 +112,96 @@ nav{
     text-transform: uppercase;
     box-shadow: 0 8px 32px rgba(97,31,31,.46);
 }
+
+/* footer */
+
+footer{
+    background: rgb(70,70,70);
+    padding: 50px 0 20px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partfooter{
+    width: 22%;
+    text-align: center;
+}
+
+.partfooter img{
+    width: 40%;
+}
+
+.partfooter h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: #d03d3d;
+    border-radius: 5px;
+    border: 1px solid #d03d3d;
+    padding: 5px;
+}
+
+.contact{
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact>i {
+    float: left;
+    margin: 0 0 0 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact > p {
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.partfooter > a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.partfooter > a:hover {
+    background-color: #d03d3d;
+    transition: all ease-in-out .6s;
+}
+
+.social-media > a > i {
+    font-size: 23px;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 38px;
+    line-height: 36px;
+    text-align: center;
+    margin-right: 5px;
+    transition: all ease-in-out .6s;
+}
+
+.social-media > a > i:hover{
+    background-color: #d03d3d;
+    border-color: #d03d3d;
+}
+
