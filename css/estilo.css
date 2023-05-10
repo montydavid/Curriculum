@@ -292,7 +292,7 @@ footer{
     color: #fff;
 }
 
-.partfooter > a {
+.partfooter  a {
     display: block;
     color: #fff;
     text-decoration: none;
@@ -300,11 +300,18 @@ footer{
     font-weight: 500;
     padding: 5px;
     border-radius: 5px;
+    
 }
 
-.partfooter > a:hover {
+.partfooter  a:hover {
     background-color: #d03d3d;
     transition: all ease-in-out .6s;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-media > a > i {

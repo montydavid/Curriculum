@@ -1,4 +1,4 @@
-let enlaces_header = document.querySelectorAll("enlaces-header")[0];
+let enlaces_header = document.querySelectorAll(".enlaces-header")[0];
 let icon_hamburguer = true;
 
 document.querySelectorAll(".hamburguer")[0].addEventListener("click", function(){
