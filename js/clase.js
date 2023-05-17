@@ -23,7 +23,7 @@ let multi = 1 * 5 * a;
 let divi = 1 / 5 / a;
 let module = 10%2;
 let elev = 5^2;
-console.log("- " + suma + "\n- " + resta + "\n- " + multi + "\n- " + divi + "\n- " + module + "\n- " + "- " + elev)
+console.log("- " + suma + "\n- " + resta + "\n- " + multi + "\n- " + divi + "\n- " + module + "\n- " + elev)
 
 // operadores de comparacion: = / == / === / <> / >= / <= / > / <
 
@@ -32,7 +32,7 @@ console.log("- " + suma + "\n- " + resta + "\n- " + multi + "\n- " + divi + "\n-
 if(10>5){
     for(let i=0;i<array_string.length;i++){
         console.log(array_string[i])
-
+        
     }
 }
 
