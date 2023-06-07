@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="form" autocomplete="off">
+        <h1>REGISTRO</h1>
+        <div class="grupo">
+            <label for="">Name: </label>
+            <input type="text" id="name">
+        </div>
+        <div class="grupo">
+            <label for="">Email: </label>
+            <input type="email" id="email">
+        </div>
+        <div class="grupo">
+            <label for="">Password: </label>
+            <input type="password" id="password">
+        </div>
+        <button type="submit" id="enviar">ENVIAR</button>
+        <p id="espacioinfo"></p>
+    </form>
+    <script>
+        const form = document.getElementById("form");
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const espacioinfo = document.getElementById("espacioinfo");
+        form.addEventListener("submit", evento=>{
+            evento.preventDefault();
+            let emailval = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let info = "";
+            let verificar = false;
+            if(name.value.length < 2){
+                info += "el nombre debe ser mayor a 2 caracteres<br>";
+                verificar = true;
+                name.style.backgroundColor = "red";
+            }
+            
+            if(!emailval.test(email.value)){
+                info += "el email es incorrecto<br>";
+                verificar = true;
+            }
+            if(password.value.length < 8){
+                info += "la contraseña debe tener 8 o mas caracteres<br>";
+                verificar = true;
+            }
+            if(verificar){
+                espacioinfo.innerHTML = info;
+                espacioinfo.style.color = "red";
+            }
+            else{
+                espacioinfo.innerText = "enviado con exito";
+                espacioinfo.style.color = "green";
+            }
+        })
+    </script>
+</body>
+</html>
